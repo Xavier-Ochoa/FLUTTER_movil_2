@@ -35,6 +35,7 @@ Aplicación móvil desarrollada con **Flutter** que muestra 10 sitios turístico
 ---
 
 ## 📸 Capturas de pantalla
+<img width="200" height="554" alt="image" src="https://github.com/user-attachments/assets/2f151f69-2d0c-496c-bc9b-acc5e394b6db" />
 
 > **¿Cómo agregar tus capturas?**
 > 1. Corre la app en tu emulador o celular.
