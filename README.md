@@ -50,13 +50,6 @@ screenshots/
 └── maps.png          → Redirección a Google Maps
 ```
 
-Una vez tengas las capturas, reemplaza esta sección con:
-
-```markdown
-| Pantalla principal | Favoritos activos | Google Maps |
-|---|---|---|
-| ![Home](screenshots/home.png) | ![Favoritos](screenshots/favoritos.png) | ![Maps](screenshots/maps.png) |
-```
 
 ---
 
