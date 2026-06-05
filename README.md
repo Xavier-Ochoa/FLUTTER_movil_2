@@ -148,6 +148,34 @@ dependencies:
 
 ---
 
+## 🤖 Apoyo de Inteligencia Artificial
+
+Durante el desarrollo se utilizó asistencia de **Claude (Anthropic)** en las siguientes secciones de mayor complejidad técnica:
+
+---
+
+### 1. Arquitectura de estado — flujo de datos entre widgets
+
+Uno de los puntos más complejos fue decidir qué widget debía ser `StatefulWidget` y qué widget debía ser `StatelessWidget`. La solución fue centralizar el estado de favoritos en la pantalla principal y pasarlo hacia los hijos mediante callbacks, siguiendo el patrón de flujo unidireccional de datos de Flutter. Sin esta estructura, cada tarjeta hubiera manejado su propio estado de forma aislada, imposibilitando el contador global de favoritos en el `AppBar`.
+
+---
+
+### 2. Animación de la estrella de favoritos
+
+Implementar que la estrella crezca y regrese a su tamaño original al ser tocada requirió encadenar dos fases de animación con pesos distintos, gestionar correctamente el ciclo de vida del controlador de animación y vincularlo al árbol de widgets mediante un mixin especializado. Un error en el orden de inicialización o en la liberación del controlador puede causar fugas de memoria en la app.
+
+---
+
+### 3. Apertura externa con manejo de errores asíncrono
+
+Abrir Google Maps desde la app parece simple, pero implica parsear correctamente la URL como URI, ejecutar la llamada de forma asíncrona y, en caso de fallo, mostrar un mensaje al usuario. El punto más delicado es verificar que el widget siga montado en pantalla antes de intentar mostrar el mensaje de error, ya que la espera asíncrona puede terminar justo cuando el usuario ya navegó a otra pantalla, lo que causaría un error en tiempo de ejecución.
+
+---
+
+> El resto del proyecto — modelo de datos, estructura de widgets, diseño de la interfaz y contenido turístico — fue desarrollado de forma propia tomando como base el tutorial oficial de Flutter: [Build a Flutter layout](https://docs.flutter.dev/ui/layout/tutorial).
+
+---
+
 ## 👨‍💻 Autor
 
 **Luis Xavier Ochoa Calle**  
