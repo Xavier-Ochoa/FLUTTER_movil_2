@@ -34,21 +34,8 @@ Aplicación móvil desarrollada con **Flutter** que muestra 10 sitios turístico
 
 ---
 
-## 📸 Capturas de pantalla
+## 📸 Captura de pantalla
 <img width="200" height="554" alt="image" src="https://github.com/user-attachments/assets/2f151f69-2d0c-496c-bc9b-acc5e394b6db" />
-
-> **¿Cómo agregar tus capturas?**
-> 1. Corre la app en tu emulador o celular.
-> 2. Toma capturas de pantalla.
-> 3. Crea una carpeta llamada `screenshots/` en la raíz del proyecto.
-> 4. Guarda las imágenes ahí y reemplaza esta sección con el bloque de abajo.
-
-```
-screenshots/
-├── home.png          → Lista principal de sitios
-├── favoritos.png     → Sitios marcados como favoritos
-└── maps.png          → Redirección a Google Maps
-```
 
 
 ---
